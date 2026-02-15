@@ -1,85 +1,62 @@
-# Day 02 – Linux Architecture, Processes, and systemd
+# Day 02 -Linux Architecture, Process, and systemd
 
-## Task
-Today’s goal is to **understand how Linux works under the hood**.
-
-You will create a short note that explains:
-- The core components of Linux (kernel, user space, init/systemd)
-- How processes are created and managed
-- What systemd does and why it matters
-
-This is the foundation for all troubleshooting you will do as a DevOps engineer.
-
----
-
-## Expected Output
-By the end of today, you should have:
-
-- A markdown file named:  
-  `linux-architecture-notes.md`
-
-or
-
-- A hand written set of notes (Recommended)
-
-Your notes should be clear enough that someone new to Linux can follow them.
-
----
-
-## Guidelines
-Follow these rules while creating your notes:
-
-- Explain **process states** (running, sleeping, zombie, etc.)
-- List **5 commands** you would use daily
-- Keep it **short and practical** (under 1 page)
-- Use bullet points and short headings
-
----
-
-## Resources
-You may refer to:
-
-- Linux `man` pages (`ps`, `top`, `systemctl`)
-- Official systemd docs
-- Your class notes
-
-Avoid copying/pasting AI Generated content.
-Focus on understanding.
-
----
-
-## Why This Matters for DevOps
-Linux is the base OS for almost every production system.
-
-If you know how processes and systemd work, you can:
-- Debug crashed services faster
-- Fix CPU/memory issues
-- Understand logs and service restarts confidently
-
-This knowledge saves hours during incidents.
-
----
-
-## Submission
-1. Fork this `90DaysOfDevOps` repository  
-2. Navigate to the `2026/day-02/` folder  
-3. Add your `linux-architecture-notes.md` file  
-4. Commit and push your changes to your fork  
-
----
-
-## Learn in Public
-Share your Day 02 progress on LinkedIn:
-
-- Post 2–3 lines on what you learned about Linux internals
-- Share one systemd command you found useful
-- Optional: screenshot of your notes
-
-Use hashtags:
-#90DaysOfDevOps
-#DevOpsKaJosh
-#TrainWithShubham
+## Linux- What is Linux?
+Linux is an open source operating system based on Unix .It is widely used in servers, cloud platforms ,and DevOps environments because of its stability and security.
+Most DevOps tools like Docker and Kubernetes run on Linux.
 
 
-Happy Learning  
-**TrainWithShubham**
+## Why Linux is used:
+- **Secure**
+ Linux has Strong permission and user access control. 
+- **Stable**
+Linux servers can run for years without reboot. 
+- **Widely used**
+Most cloud platforms and servers use Linux.
+- **Free & Open source**
+Anyone can use, modify, and distribute linux without liscence cost.
+  
+## Linux Architectue 
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/78e948f9-4233-4f07-9173-fa95a6372b14">
+
+### Application 
+Applications are softeware programs like browsers, editors and DevOps tools that run top of linux. 
+### Shell 
+The shell acts as interface between the user and the kernel, it allow the user to excecute commands like 'ls', 'pwd' and 'ps'
+### Kernal
+The Kernal is the core of the Linux.
+It manages CPU, Memory, devices, and processes.
+### Hardware 
+Hardware includes physical components like CPU, RAM, disk, and network devices.
+
+
+## Processes 
+A process is a running instance of a program. When you execute a command or open an application, a process is created 
+Each process has its owm Process Id (PID)
+### Process States
+ - Running – Process is using CPU
+ - Sleeping – Waiting for input or resources
+ - Stopped – Paused manually or by signal
+ - Zombie – Process finished but not cleaned up
+## Systemd 
+Systemd is the dafault init system in modern linux distributions. It starts system services during boot and manages backgrund services.
+
+# Daily Useful Linux Commands
+  - ps – View running processes
+  - top – Monitor CPU and memory usage
+  - systemctl – Manage services
+  - journalctl – View system logs
+  - kill – Stop a process
+
+# Why This Matters
+ - Helps debug crashed services
+ - Helps identify CPU or memory issues
+ - Builds confidence in Linux troubleshooting
+
+ 
+
+
+
+
+
+
